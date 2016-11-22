@@ -5,7 +5,6 @@
   "author": "Justin Reynolds <jreynolds@netflix.com>",
   "scripts": {
     "clean": "rimraf dist && mkdirp dist",
-    "lint": "eslint src --ext .js --ext .jsx",
     "copy:fonts": "cpx \"./node_modules/source-sans-pro/**/*\" ./dist/fonts",
     "copy:json": "cpx \"./src/*.json\" ./dist",
     "dev-server": "webpack-dev-server --host=0.0.0.0 --content-base dist/ --history-api-fallback",
@@ -36,7 +35,9 @@
     "superagent": "^2.2.0",
     "tween.js": "^16.3.5",
     "vizceral-react": "~2.4.0",
-    "webfontloader": "^1.6.26"
+    "webfontloader": "^1.6.26",
+    "knuth-shuffle": "^1.0.1",
+    "three": "^0.80.1"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
@@ -57,13 +58,11 @@
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
-    "knuth-shuffle": "^1.0.1",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^3.0.0",
     "precommit-hook": "^3.0.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
-    "three": "^0.80.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0",
